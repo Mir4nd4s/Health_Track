@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Health Track</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="circle borderCircle">
+      <div class="btn">
+        <a href="home.html"><img src="css/img/arrow-left.png" alt=""></a>
+      </div>
+    </div>
+
+    <div class="km">
+     <h1>524.9</h1>
+     <p>KM Total</p>
+    </div>
+
+    <div class="time">
+      <div onclick="reset()" class="btn reset">
+        <img src="css/img/clock.png" alt="">
+        <p>Reset</p>
+      </div>
+      <div>
+        <p class="time">
+          <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span>
+        </p>
+        <p>Tempo hs</p>
+      </div>
+    </div>
+
+      <div class="circle circle1">
+        <div class="circle circle2">
+          <div onclick="start()" class="start btn">
+            <img src="css/img/btnCorrida.png" alt="">
+            <p>Iniciar corrida</p>
+          </div>
+        </div>
+      </div>
+    
+    <div class="circle borderCircle"> 
+      <div onclick="stop()" class="btn stop">
+        <img src="css/img/pause.png" alt="">
+      </div>
+    </div>
+
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/corrida.js"></script>
+
+</body>
+
+</html>
