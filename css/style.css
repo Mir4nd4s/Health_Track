@@ -2,37 +2,38 @@
 
 :root {
   --white: #ffffff;
-  --red: #E52D27;
-  --gray1: #8C8C8C;
+  --red: #e52d27;
+  --gray1: #8c8c8c;
   --gray2: #c4c4c4;
-
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
-} 
+}
 
-body{
+body {
+  min-width: 500px;
+  height: 100vh;
   background: var(--white);
-	text-align: center;
-	letter-spacing: 2px;
+  text-align: center;
+  letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: var(--gray1);
-
 }
+
 .container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
+  height: 100%;
+  
 }
 
-/* Estilo Page Abertura */
-.logo{
+/* Estilo Page Login */
+.logo {
+  width: 100%;
+  height: 70vh;
   border: 2px solid var(--red);
   border-radius: 100%;
 }
@@ -41,72 +42,69 @@ body{
   border: 2px solid var(--red);
 }
 .shadow {
-  box-shadow:rgba(0, 0, 0, .1);
+  box-shadow: rgba(0, 0, 0, 0.1);
 }
 .textShadow {
   text-shadow: var(--gray2) 0.1em 0.2em 0.2em;
+
+
 }
+a {
+  color: var(--red);
+}
+
 
 /* Estilo Page Inscrição */
 
 .bgGray {
   background-color: var(--gray2);
 }
-/* .line:after,
-.line:before {
-  content: " ";
-  flex: 1;
-  height: 1px;
-  background: var(--gray);
-} */
 .line {
-  width: 100%;
+  width: 50%;
   color: var(--gray1);
 }
 
-
-
-
-
-
-
-
-.btn-custom{
-  padding: 1px 15px 3px 2px;
-	border-radius: 50px;
-  border: 1px solid blue;
+/* Estilo Page Home */
+.box {
+  background-color: var(--gray2);
+  border-radius: 20px;
+}
+.avatar img{
+  width: 100%;
+}
+.bord {
+  border: 2px solid var(--red);
+  border-radius: 100%;
+}
+.btn a {
+  color: var(--gray1);
 }
 
-.test{
-  border: 1px solid red;
+/* Estilo Page Perfil */
+.btn-custom img{
+  width: 25%;
 }
-.humor img{
-  width: 30%;
-  height: 30%;
-
-  
-}
-
-
-
 
 /* Estilo Page Corrida */
 
 .circle {
   margin: 35px;
   border-radius: 100%;
+  background-color:  orange;
 }
-.circle1{
-  border: 10px solid rgba(229, 45, 39, .7);
+.circle1 {
+  border: 10px solid rgba(229, 45, 39, 0.7);
 }
-.circle2{
+.circle2 {
   width: 200px;
   height: 200px;
   border: 5px solid var(--red);
+  background-color: yellow;
 }
-.borderCircle{
+.borderCircle {
   width: 50px;
   height: 50px;
   border: 2px solid var(--red);
+  background-color: black;
 }
 /* ******************* */

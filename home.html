@@ -5,77 +5,76 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <title>Health Track</title>
 </head>
 
 <body>
   <div class="container-fluid">
-    <header>
-      <div class="row justify-content-center ">
-        <div class="col-8">
-          <div class="row">
-            <div class="col-5">
-              <img src="css/img/icons/user.png" alt="">
+    <div class="row mt-5">
+      <header class="d-flex justify-content-between align-items-center">
+        <div class="col py-4 box shadow">
+          <div class="row align-items-center">
+            <div class="col avatar">
+              <img src="/css/img/avatar.png" alt=""/>
             </div>
-            <div class="col-5">
-              <p>Nome de usuário</p>
-              <p>Idade</p>
-              <p>Peso</p>
+            <div class="col flex-grow-1">
+              <h1>Fulano de Tal</h1>
+              <h2>XX Anos</h2>
+              <h2>XX Kg</h2>
             </div>
-            <div class="col-1">
-              <img src="css/img/icons/smiley 1.png" alt="">
+            <div class="col avatar">
+              <img src="/css/img/icons/happy.png" alt="" style="width: 25%;">
             </div>
           </div>
         </div>
-        <div class="col-1">
-          <div>
-            <img src="" alt="">
-            <a class="nav-link" href="relax.html">Relaxamento</a>
-          </div>
+        <div class="col-4 btn d-flex justify-content-center">
+          <a href="">
+            <img class="bord shadow p-2" src="/css/img/gradiente/meditacao.png" alt="">
+            <p>Relaxamento</p>
+          </a>
         </div>
-      </div>
-    </header>
-    <section class="teste">
-      <div class="row justify-content-center">
-        <div class="col-6  teste1">
-          <canvas id="myCanvas " width="100" height="400" style="border:1px solid #000000;"></canvas>
+      </header>
+    </div>
+
+    <div class="row my-5">
+      <main class="d-grid gap-3">
+        <div class="col rounded-2 p-4 d-flex justify-content-center shadow">
+          <img src="/css/img/grafic1.png" alt="" />
+        </div>
+        <div class="col rounded-2 p-4 d-flex justify-content-center shadow">
+          <img src="/css/img/grafic2.png" alt="" />
+        </div>
+      </main>
+    </div>
+
+    <div class="row">
+      <nav class="d-flex justify-content-center">
+        <div class="btn-group btn-group-lg gap-5" role="group" aria-label="...">
+          <div class="btn">
+            <a href="perfil.html">
+              <img class="bord shadow p-2" src="/css/img/gradiente/perfil.png" alt="">
+              <p>Perfil</p>
+            </a>
+          </div>
+          <div class="btn">
+            <a href="contador.html">
+              <img class="bord shadow p-2" src="/css/img/gradiente/calc.png" alt="">
+              <p>Contadores</p>
+            </a>
+          </div>
+          <div class="btn">
+            <a href="corrida.html">
+              <img class="bord shadow p-2" src="/css/img/gradiente/run.png" alt="">
+              <p>Corrida</p>
+            </a>
+          </div>
         </div>
 
-      </div>
-      
-    </section>
-    <section>
-      <div class="row justify-content-center">
-        <div class="col">
-          <canvas id="myChart" width="600" height="400" style="border:1px solid #000000;"></canvas>
-        </div>
-      </div>
-    </section>
-    <nav class="card-footer">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <div>
-            <img src="" alt="">
-            <a class="nav-link" href="perfil.html">Perfil</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div>
-            <img src="" alt="">
-            <a class="nav-link" href="contador.html">Contadores</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div>
-            <img src="" alt="">
-            <a class="nav-link" href="corrida.html">Corrida</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+      </nav>
+    </div>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
 
