@@ -12,46 +12,54 @@
 </head>
 
 <body>
-  <div class="container">
-
-    <div class="circle borderCircle">
-      <div class="btn">
-        <a href="home.html"><img src="css/img/arrow-left.png" alt=""></a>
+  <div class="container d-flex align-items-center">
+    <div class="row justify-content-center">
+      <div class="d-flex justify-content-start mb-5">
+        <div class="btn">
+          <a href="home.html"><img class="circle borderCircle shadow" src="css/img/arrow-left.png" alt=""></a>
+        </div>
       </div>
-    </div>
 
-    <div class="km">
-     <h1>524.9</h1>
-     <p>KM Total</p>
-    </div>
+      <div class="row">
+        <div class="text-center km">
+          <h1>524.9</h1>
+          <h5>KM Total</h5>
+        </div>
 
-    <div class="time">
-      <div onclick="reset()" class="btn reset">
-        <img src="css/img/clock.png" alt="">
-        <p>Reset</p>
-      </div>
-      <div>
-        <p class="time">
-          <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span>
-        </p>
-        <p>Tempo hs</p>
-      </div>
-    </div>
+        <div class="d-flex align-items-center mt-5 text-center time">
+          <div onclick="reset()" class="col-md btn reset">
+            <img src="css/img/clock.png" alt="">
+            <h5>Reset</h5>
+          </div>
 
-      <div class="circle circle1">
-        <div class="circle circle2">
-          <div onclick="start()" class="start btn">
-            <img src="css/img/btnCorrida.png" alt="">
-            <p>Iniciar corrida</p>
+          <div class="col-md">
+            <h1><span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span></h1>
+            <h5>Tempo hs</h5>
           </div>
         </div>
       </div>
-    
-    <div class="circle borderCircle"> 
-      <div onclick="stop()" class="btn stop">
-        <img src="css/img/pause.png" alt="">
+
+      <div class="row text-center my-5 ">
+        <div class="d-flex justify-content-center circle circle1">
+          <div class="circle circle2">
+            <div onclick="start()" class="start btn">
+              <img class="mb-0" src="css/img/btnCorrida.png" alt="">
+              <h5>Iniciar corrida</h5>
+            </div>
+
+          </div>
+        </div>
       </div>
+
+      <div class="d-flex justify-content-end">
+        <div onclick="stop()" class="btn stop">
+          <img class="circle mb-0 borderCircle shadow" src="css/img/pause.png" alt="">
+          <h5>Pausar</h5>
+        </div>
+      </div>
+
     </div>
+
 
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
