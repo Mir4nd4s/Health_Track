@@ -15,7 +15,7 @@
 }
 
 body {
-  min-width: 490px;
+  min-width: 500px;
   height: 100vh;
   background: var(--white);
   text-align: center;
@@ -105,3 +105,6 @@ a {
 } 
 
 /* ******************* */
+
+
+/* Estilo Page relax */
