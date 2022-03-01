@@ -15,7 +15,8 @@
 }
 
 body {
-  min-width: 500px;
+  Width:100%
+  Heigth:100%
   background: var(--white);
   text-align: center;
   letter-spacing: 2px;
@@ -24,9 +25,6 @@ body {
   color: var(--gray1);
 }
 
-.container {
-  height: 100vh;
-}
 
 /* Estilo Page Login */
 .logo {
