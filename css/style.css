@@ -15,8 +15,8 @@
 }
 
 body {
-  Width:100%
-  Heigth:100%
+  Width:100%;
+  Heigth:100%;
   background: var(--white);
   text-align: center;
   letter-spacing: 2px;
