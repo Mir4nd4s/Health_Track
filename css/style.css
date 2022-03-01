@@ -16,7 +16,6 @@
 
 body {
   min-width: 500px;
-  height: 100vh;
   background: var(--white);
   text-align: center;
   letter-spacing: 2px;
@@ -26,13 +25,13 @@ body {
 }
 
 .container {
-  height: 100%;
+  height: 100vh;
 }
 
 /* Estilo Page Login */
 .logo {
   width: 100%;
-  height: 70vh;
+  height: 100%;
   border: 2px solid var(--red);
   border-radius: 100%;
 }
@@ -45,16 +44,12 @@ body {
 }
 .textShadow {
   text-shadow: var(--gray2) 0.1em 0.2em 0.2em;
-
-
 }
 a {
   color: var(--red);
 }
 
-
 /* Estilo Page Inscrição */
-
 .bgGray {
   background-color: var(--gray2);
   border-radius: 20px;
@@ -65,8 +60,10 @@ a {
 }
 
 /* Estilo Page Home */
-.avatar img{
-  width: 100%;
+.avatar img {
+  width: 80%;
+  background-color: var(--white);
+  border-radius: 50%;
 }
 .bord {
   border: 2px solid var(--red);
@@ -74,22 +71,32 @@ a {
 }
 .btn a {
   color: var(--gray1);
+  text-decoration: none;
+}
+nav .btn img {
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  nav .btn img {
+    width: 80%;
+  }
 }
 
+
 /* Estilo Page Perfil */
-.btn-custom img{
-  width: 25%;
+.btn-custom img {
+  width: 100%;
 }
 
 /* Estilo Page Corrida */
 
- .circle {
-  margin: 35px;
+.circle {
+  margin: 30px;
   padding: 15px;
   border-radius: 100%;
 }
 .circle1 {
-  width: 35%;
+  width: 30%;
   height: 100%;
   border: 10px solid rgba(229, 45, 39, 0.7);
   border-radius: 50%;
@@ -99,12 +106,11 @@ a {
   height: 80%;
   border: 5px solid var(--red);
   border-radius: 50%;
-} 
+}
 .borderCircle {
   border: 2px solid var(--red);
-} 
+}
 
 /* ******************* */
 
 
-/* Estilo Page relax */

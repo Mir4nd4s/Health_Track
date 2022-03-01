@@ -5,33 +5,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Health Track</title>
 </head>
 
 <body>
-  <div class="container d-flex align-items-center">
-    <div class="row justify-content-center mt-5">
-      <div class="d-flex justify-content-start">
-        <div class="btn">
-          <a href="home.html"><img class="circle borderCircle shadow" src="css/img/arrow-left.png" alt=""></a>
-        </div>
-      </div>
+  <div class="container">
 
+    <!-- Botão Voltar -->
+    <div class="btn d-flex justify-content-start">
+      <a href="home.html"><img class="circle borderCircle shadow" src="css/img/arrow-left.png" alt="">Voltar</a>
+    </div>
+
+      <!-- Marcador KM -->
       <div class="row">
         <div class="text-center km">
           <h1>524.9</h1>
           <h5>KM Total</h5>
         </div>
 
+        <!-- Botão reset -->
         <div class="d-flex align-items-center mt-5 text-center time">
           <div onclick="reset()" class="col-md btn reset">
             <img src="css/img/clock.png" alt="">
-            <h5>Reset</h5>
+            <h5>Resetar</h5>
           </div>
 
+          <!-- Marcador tempo -->
           <div class="col-md">
             <h1><span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span></h1>
             <h5>Tempo hs</h5>
@@ -39,26 +41,26 @@
         </div>
       </div>
 
-      <div class="row text-center my-5 ">
-        <div class="d-flex justify-content-center circle circle1">
+      <!-- Botão Iniciar contagem -->
+      <div class="row text-center d-flex justify-content-center">
+        <div class=" circle circle1">
           <div class="circle circle2">
             <div onclick="start()" class="start btn">
               <img class="mb-0" src="css/img/btnCorrida.png" alt="">
-              <h5>Iniciar corrida</h5>
+              <h5>Iniciar</h5>
             </div>
-
           </div>
         </div>
       </div>
 
+      <!-- Botão Pausar contagem -->
       <div class="d-flex justify-content-end">
         <div onclick="stop()" class="btn stop">
-          <img class="circle mb-0 borderCircle shadow" src="css/img/pause.png" alt="">
+          <img class="circle my-0 borderCircle shadow" src="css/img/pause.png" alt="">
           <h5>Pausar</h5>
         </div>
       </div>
 
-    </div>
 
 
   </div>

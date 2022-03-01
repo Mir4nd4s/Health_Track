@@ -5,76 +5,78 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Health Track</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="row mt-5">
-      <header class="d-flex justify-content-between align-items-center">
-        <div class="col py-1 bgGray shadow">
-          <div class="row align-items-center">
-            <div class="col avatar">
-              <img src="/css/img/avatar.png" alt=""/>
-            </div>
-            <div class="col flex-grow-1">
-              <h1>Fulano de Tal</h1>
-              <h2>XX Anos</h2>
-              <h2>XX Kg</h2>
-            </div>
-            <div class="col avatar">
-              <img src="/css/img/icons/happy.png" alt="" style="width: 25%;">
-            </div>
+
+    <!-- Botão Sair -->
+    <div class="btn d-flex justify-content-start">
+      <a href="./index.html"><img class="circle borderCircle shadow" src="css/img/arrow-left.png" alt="">Sair</a>
+    </div>
+    <header class="row mt-5 ">
+      <!-- box informações perfil -->
+      <div class="col-8 py-1 bgGray shadow">
+        <div class="row align-items-center">
+          <div class="col avatar">
+            <img src="/css/img/avatar.png" alt="" />
+          </div>
+          <div class="col flex-grow-1">
+            <h2>Fulano de Tal</h2>
+            <h3>XX Anos</h3>
+            <h3>XX Kg</h3>
+          </div>
+          <div class="col">
+            <img src="/css/img/icons/happy.png" alt="" style="width: 50%;">
           </div>
         </div>
-        <div class="col-4 btn d-flex justify-content-center">
-          <a href="">
-            <img class="bord shadow p-2" src="/css/img/gradiente/meditacao.png" alt="">
-            <p>Relaxamento</p>
+      </div>
+      <!-- Botão relaxamento -->
+      <div class="col btn d-flex justify-content-center align-items-center">
+        <a href="./relax.html">
+          <img class="bord shadow p-2" src="/css/img/gradiente/meditacao.png" alt="" style="width: 80%;">
+          <p>Relaxamento</p>
+        </a>
+      </div>
+    </header>
+
+    <!-- Gráficos -->
+    <main class="row my-5 gap-5">
+      <div class="col-sm rounded-2 p-4 d-flex justify-content-center shadow">
+        <img src="/css/img/grafic1.png" alt="" />
+      </div>
+      <div class="col-sm rounded-2 p-4 d-flex justify-content-center shadow">
+        <img src="/css/img/grafic2.png" alt="" />
+      </div>
+    </main>
+
+    <!-- Botões navegação outras telas -->
+    <nav class="row d-flex justify-content-center">
+      <div class="btn-group btn-group-md gap-5" role="group" aria-label="...">
+        <div class="btn">
+          <a href="./perfil.html">
+            <img class="bord shadow p-2" src="/css/img/gradiente/perfil.png" alt="">
+            <p>Perfil</p>
           </a>
         </div>
-      </header>
-    </div>
-
-    <div class="row my-5">
-      <main class="d-grid gap-3">
-        <div class="col rounded-2 p-4 d-flex justify-content-center shadow">
-          <img src="/css/img/grafic1.png" alt="" />
+        <div class="btn">
+          <a href="contador.html">
+            <img class="bord shadow p-2" src="/css/img/gradiente/calc.png" alt="">
+            <p>Contadores</p>
+          </a>
         </div>
-        <div class="col rounded-2 p-4 d-flex justify-content-center shadow">
-          <img src="/css/img/grafic2.png" alt="" />
+        <div class="btn">
+          <a href="corrida.html">
+            <img class="bord shadow p-2" src="/css/img/gradiente/run.png" alt="">
+            <p>Corrida</p>
+          </a>
         </div>
-      </main>
-    </div>
-
-    <div class="row">
-      <div class="d-flex justify-content-center">
-        <div class="btn-group btn-group-lg gap-2" role="group" aria-label="...">
-          <div class="btn">
-            <a href="perfil.html">
-              <img class="bord shadow p-2" src="/css/img/gradiente/perfil.png" alt="">
-              <p>Perfil</p>
-            </a>
-          </div>
-          <div class="btn">
-            <a href="contador.html">
-              <img class="bord shadow p-2" src="/css/img/gradiente/calc.png" alt="">
-              <p>Contadores</p>
-            </a>
-          </div>
-          <div class="btn">
-            <a href="corrida.html">
-              <img class="bord shadow p-2" src="/css/img/gradiente/run.png" alt="">
-              <p>Corrida</p>
-            </a>
-          </div>
-        </div>
-
       </div>
-    </div>
+    </nav>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
 
