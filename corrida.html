@@ -13,60 +13,67 @@
 
 <body>
   <div class="container">
-
     <!-- Botão Voltar -->
-    <div class="btn d-flex justify-content-start">
-      <a href="home.html"><img class="circle coloRed shadow" src="css/img/arrow-left.png" alt="">Voltar</a>
-    </div>
-
+    <header class="btn d-flex justify-content-between align-items-center">
+      <a href="./home.html">
+        <img class="circle coloRed shadow" src="./css/img/arrow-left.png" alt="">Voltar
+      </a>
+      <!-- Botão tema -->
+     <div class="btn">
+      <div class="bord" style="border-radius: 50px;">
+        <div class="button m-1 shadow">
+          <div class="ball"></div>
+        </div>
+      </div>
+    </header>
+     
+    <main class="col mx-3">
       <!-- Marcador KM -->
       <div class="row">
-        <div class="text-center km">
+        <div class="col-12 km">
           <h1>524.9</h1>
           <h5>KM Total</h5>
         </div>
 
-        <!-- Botão reset -->
-        <div class="d-flex align-items-center mt-5 text-center time">
-          <div onclick="reset()" class="col-md btn reset">
-            <img src="css/img/clock.png" alt="">
-            <h5>Resetar</h5>
-          </div>
+        <div class="d-flex justify-content-around my-3">
+          <!-- Botão reset -->
+            <div onclick="reset()" class="btn reset">
+              <img class="bord p-1 shadow" src="css/img/clock.png" alt="">
+              <h5>Resetar</h5>
+            </div>
+            <!-- Marcador tempo -->
+            <div class="mt-4">
+              <h1 class="mb-0">
+                <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span>
+              </h1>
+              <h5>Tempo hs</h5>
+            </div>
 
-          <!-- Marcador tempo -->
-          <div class="col-md">
-            <h1><span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span></h1>
-            <h5>Tempo hs</h5>
-          </div>
         </div>
       </div>
-
       <!-- Botão Iniciar contagem -->
-      <div class="row text-center d-flex justify-content-center">
-        <div class=" circle circle1">
-          <div class="circle circle2">
+      <div class="row justify-content-center">
+        <div class="bordCircle">
+          <div class="circleRun">
             <div onclick="start()" class="start btn">
-              <img class="mb-0" src="css/img/btnCorrida.png" alt="">
+              <img class=" run" src="css/img/btnCorrida.png" alt="">
               <h5>Iniciar</h5>
             </div>
           </div>
         </div>
       </div>
-
       <!-- Botão Pausar contagem -->
       <div class="d-flex justify-content-end">
         <div onclick="stop()" class="btn stop">
-          <img class="circle my-0 coloRed shadow" src="css/img/pause.png" alt="">
+          <img class="circle my-0 bord shadow" src="css/img/pause.png" alt="">
           <h5>Pausar</h5>
         </div>
       </div>
-
-
-
+    </main>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/corrida.js"></script>
-
+  <script src="./js/tema.js"></script>
 </body>
 
 </html>
