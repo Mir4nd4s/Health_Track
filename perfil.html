@@ -13,81 +13,81 @@
 
 <body>
   <div class="container">
-
-    <!-- Botão voltar -->
-    <div class="btn d-flex justify-content-start">
+    <!-- Botão Voltar -->
+    <header class="btn d-flex justify-content-start">
       <a href="./home.html">
-        <img class="circle borderCircle shadow" src="./css/img/arrow-left.png" alt="">Sair
+        <img class="circle coloRed shadow" src="./css/img/arrow-left.png" alt="">Sair
       </a>
-    </div>
-    <!-- avatar -->
-    <div class="row justify-content-center">
-      <div class="mt-5">
-        <img class="bord p-3 shadow" src="css/img/avatar.png" alt="">
-      </div>
+    </header>
 
-      <!-- form -->
-      <form action="" class="my-5">
-        <div class="mb-3">
-          <input type="text" class="form-control bgGray" placeholder="Seu nome" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        <div class="row">
-          <div class="input-group col-lg mb-3">
-            <label class="input-group-text bgGray" for="inputGroupSelect01">Data de nascimento</label>
-            <input class="bgGray" type="date">
+    <main class="row mx-2 justify-content-center">
+      <!-- avatar -->
+      <div id="displayImage" class="btn mt-3 imageUser d-flex justify-content-center align-items-center shadow bord">
+        <a type="button" class="btn">
+          <img id="changeAvatar" class="" src="" alt="" />
+        </a>
+        <!-- Selecionar imagem -->
+        <form action="">
+          <label for="imageInput">
+            <div class="btn refresh">
+              <img src="./css/img/refresh.png" class="bord p-1" alt="">
+            </div>
+          </label>
+          <input type="file" accept="image/*" id="imageInput" capture>
+        </form>
+      </div>
+      <div class="row  mx-2 justify-content-center">
+        <!-- form -->
+        <form action="" class="col-md-6 my-5 mx-5">
+          <h4 class="my-4">Informações</h4>
+          <div class="input-group mb-3">
+            <label class="input-group-text bgGray" for="inputGroupSelect01">Nome</label>
+            <input class="form-control bgGray" type="text">
           </div>
-          <div class="input-group col-lg mb-3">
-            <label class="input-group-text bgGray" for="inputGroupSelect01">Peso (Kg)</label>
-            <input class="bgGray" type="number">
-          </div>
-          <div class="input-group">
-            <span class="input-group-text bgGray" id="basic-addon1">Gênero alimenticio</span>
-            <select class="form-select bgGray" aria-label="Default select example">
+          <div class="input-group mb-3">
+            <label class="input-group-text bgGray" for="inputGroupSelect02">Sexo</label>
+            <select class="form-select bgGray">
               <option selected></option>
-              <option value="1">Carnivoro</option>
-              <option value="2">Vegetariano</option>
-              <option value="2">Vegano</option>
-              <option value="2">Flexível</option>
+              <option value="1">Feminino</option>
+              <option value="2">Masculino</option>
             </select>
           </div>
-        </div>
-      </form>
-      
-      <!-- box emoji -->
-      <h3 class="mb-3">Como me sinto hoje:</h3>
-      <div class="d-flex mb-5 py-3 bgGray">
-        <a href="#" class="btn btn-custom">
-          <img src="css/img/icons/angry.png" alt="">
-        </a>
-        <a href="#" class=" btn btn-custom">
-          <img src="css/img/icons/happy.png" alt="">
-        </a>
-        <a href="#" class=" btn btn-custom">
-          <img src="css/img/icons/rich.png" alt="">
-        </a>
-        <a href="#" class=" btn btn-custom">
-          <img src="css/img/icons/sick.png" alt="">
-        </a>
-        <a href="#" class=" btn btn-custom">
-          <img src="css/img/icons/indifferent.png" alt="">
-        </a>
-        <a href="#" class=" btn btn-custom">
-          <img src="css/img/icons/devil.png" alt="">
-        </a>
-        <a href="#" class=" btn btn-custom">
-          <img src="css/img/icons/seasick.png" alt="">
-        </a>
-        <a href="#" class=" btn btn-custom">
-          <img src="css/img/icons/sleep.png" alt="">
-        </a>
+          <div class="input-group mb-3">
+            <label class="input-group-text bgGray" for="inputGroupSelect03">Peso (Kg)</label>
+            <input class="form-control bgGray" type="number">
+          </div>
+          <div class="input-group mb-3">
+            <label class="input-group-text bgGray" for="inputGroupSelect04">Dt Nasc</label>
+            <input class="form-control bgGray" type="date">
+          </div>
       </div>
-  
-      <a href="home.html" class="btn btn-lg col-4 coloRed shadow mb-5">Salvar</a>
-      
-    </div>
+
+
+      </form>
+      <div class="col-md my-5">
+        <h4 class="my-4">Configurações</h4>
+        <div class="d-flex justify-content-around mb-5 gap-5">
+          <div class="bord" style="border-radius: 50px;">
+            <div class="button m-1 shadow">
+              <div class="ball"></div>
+            </div>
+          </div>
+          <div class="form-check mt-2">
+            <input class="form-check-input bord" style="height: 25px; width: 25px;" type="checkbox" value="" id="form1Example3" />
+            <label class="form-check-label flex-grow-1 mx-2" for="form1Example3">Notificações</label>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <a href="home.html" class="btn col coloRed shadow mb-5">Salvar</a>
 
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tema.js"></script>
+  <script src="js/avatarImage.js"></script>
 
 </body>
 

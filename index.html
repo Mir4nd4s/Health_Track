@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/anime-login.css">
@@ -14,10 +14,9 @@
 
 <body>
   <div class="container">
-    <!-- Logo -->
-    <div class="row gap-5 mt-5">
-      <!-- image -->
-      <div class="col-lg align-self-center logo shadow">
+    <main class="row my-5">
+      <!-- Logo -->
+      <div class="col-lg p-4 d-flex justify-content-center align-self-center bord">
         <svg class="animated" id="freepik_stories-healthy-lifestyle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
           <g id="freepik--Floor--inject-16" style="transform-origin: 254.922px 356.9px 0px;" class="animable">
             <path id="freepik--floor--inject-16" d="M105.13,270.4c-82.72,47.76-82.72,125.2,0,173s216.86,47.76,299.58,0,82.73-125.2,0-173S187.85,222.64,105.13,270.4Z" style="fill: rgb(240, 240, 240); transform-origin: 254.922px 356.9px 0px;" class="animable"></path>
@@ -445,12 +444,12 @@
         </svg>
       </div>
 
-      <!-- Login -->
-      <div class="col-lg mt-3">
+      <!--Titulo/Formulário -->
+      <div class="col-lg p-4 d-flex justify-content-center">
         <div class="card-login">
           <h1 class="text-center my-5 textShadow" style="color: #e52d27;">Health Track</h1>
-
-            <form action="" class="col">
+    
+            <form action="" class="">
               <div class="form-floating mb-3">
                 <input type="email" class="form-control bgGray" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email</label>
@@ -459,23 +458,30 @@
                 <input type="password" class="form-control bgGray" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Senha</label>
               </div>
+
               <!-- Lembrar/ esqueci a senha -->
               <div class="d-flex justify-content-between mt-3 mb-5">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                  <input class="form-check-input bord" type="checkbox" value="" id="form1Example3" />
                   <label class="form-check-label flex-grow-1" for="form1Example3"> Lembrar-me </label>
                 </div>
-                <a href="#!">Esqueci a senha</a>
+                <a class="link" href="#!">Esqueci a senha</a>
               </div>
             </form>
+            <!-- Botões -->
           <a href="home.html" class="btn btn-lg col-4 coloRed shadow">Entrar</a>
+          <p class="text-center m-5">Não é membro? <a class="link" href="inscricao.html">Crie uma conta</a> </p>
         </div>
-        <p class="text-center mt-5">Não é membro? <a href="inscricao.html">Crie uma conta</a> </p>
       </div>
-
-    </div>
+    </main>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+

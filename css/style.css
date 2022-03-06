@@ -5,37 +5,44 @@
   --red: #e52d27;
   --gray1: #8c8c8c;
   --gray2: #c4c4c4;
+  --dark: rgba(2, 0, 36, 0.82);
 }
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  color: var(--gray1);
 }
-
 body {
-  Width:100%;
-  Heigth:100%;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   background: var(--white);
   text-align: center;
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  color: var(--gray1);
 }
-
-
-/* Estilo Page Login */
-.logo {
+.container {
   width: 100%;
   height: 100%;
-  border: 2px solid var(--red);
-  border-radius: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--gray1);
+  font-weight: bold;
+}
+.bord {
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  background-color: var(--white);
 }
 .coloRed {
   color: var(--red);
-  border: 2px solid var(--red);
+  border: 3px solid var(--red);
+  background-color: var(--white);
 }
 .shadow {
   box-shadow: rgba(0, 0, 0, 0.1);
@@ -43,51 +50,106 @@ body {
 .textShadow {
   text-shadow: var(--gray2) 0.1em 0.2em 0.2em;
 }
-a {
-  color: var(--red);
-}
-
-/* Estilo Page Inscrição */
 .bgGray {
   background-color: var(--gray2);
   border-radius: 20px;
+  color: var(--gray1);
 }
+.input-group,
+.form-control {
+  border: 2px solid var(--white);
+  border-radius: 25px;
+}
+.dark {
+  background-color: var(--dark);
+}
+
+/* Estilo Page Login */
+.link {
+  color: var(--red);
+  border-bottom: 1px solid var(--red);
+}
+
+/* Estilo Page Inscrição */
 .line {
   width: 50%;
   color: var(--gray1);
 }
 
 /* Estilo Page Home */
+.box {
+  width: 55%;
+  height: 50%;
+}
 .avatar img {
-  width: 80%;
+  width: 50%;
   background-color: var(--white);
   border-radius: 50%;
 }
-.bord {
-  border: 2px solid var(--red);
-  border-radius: 100%;
-}
-.btn a {
-  color: var(--gray1);
-  text-decoration: none;
-}
-nav .btn img {
-  width: 50%;
-}
-@media screen and (max-width: 1000px) {
-  nav .btn img {
-    width: 80%;
-  }
-}
-
-
-/* Estilo Page Perfil */
 .btn-custom img {
   width: 100%;
 }
+nav img {
+  width: 50%;
+}
+.humor img {
+  width: 50%;
+  background-color: var(--white);
+}
+@media screen and (max-width: 990px) {
+  nav img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .box {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/* Estilo Page Perfil */
+.imageUser {
+  position: relative;
+}
+.refresh {
+  position: absolute;
+  top: 80%;
+  left: 75%;
+}
+#imageInput {
+  visibility: hidden;
+}
+#displayImage {
+  width: 350px;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.button {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  background: var(--dark);
+}
+.ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--red);
+  transition: left 1s;
+}
+.ball-move {
+  left: calc(100% - 40px);
+}
 
 /* Estilo Page Corrida */
-
 .circle {
   margin: 30px;
   padding: 15px;
@@ -105,10 +167,6 @@ nav .btn img {
   border: 5px solid var(--red);
   border-radius: 50%;
 }
-.borderCircle {
-  border: 2px solid var(--red);
-}
 
 /* ******************* */
-
 
